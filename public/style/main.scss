@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+header{
+    background-color: rgb(75, 183, 255);
+    box-shadow: 0 0 5px rgb(75, 183, 255);
+    nav{
+        max-width: 90rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2%;
+        font-size: 1.3em;
+        .menu{
+            display: flex;
+            gap: 2rem;
+            a{
+                color: black;
+            }
+        }
+    }
+}
+
+main{
+    max-width: 80rem;
+    margin: auto;
+    padding: 1% 2%;
+    min-height: 87vh;
+}
+
+.courses{
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 3rem;
+        margin: 3rem 0;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .grid-item{
+            border: 2px solid lightgrey;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            h3, span{
+                text-align: center;
+            }
+            .status{
+                color: rgb(107, 107, 107);
+            }
+            a{
+                text-align: center;
+                background-color: lightsalmon;
+                color: black;
+                padding: 2%;
+                border-radius: 0.25rem;
+                transition: all 0.3s;
+                &:hover{
+                    letter-spacing: 2px;
+                    background-color: rgb(255, 199, 176);
+                }
+            }
+        }
+    }
+}
+
+.current-course{
+    position: relative;
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 2rem;
+        text-decoration: underline;
+    }
+    h2{
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: rgb(126, 126, 126);
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    a{
+        position: absolute;
+        right: 0;
+        bottom: -5rem;
+        background-color: rgb(85, 216, 118);
+        padding: 0.5rem 3rem;
+        border-radius: 0.5rem;
+        color: black;
+        font-weight: 700;
+    }
+}
+
+footer{
+    background-color: rgb(209, 209, 209);
+    margin-top: 2rem;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px rgb(209, 209, 209);
+    a{
+        color: rgb(0, 149, 194);
+    }
+}

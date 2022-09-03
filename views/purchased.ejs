@@ -1,0 +1,12 @@
+<section class="courses">
+    <h1>These are all your purchased courses</h1>
+    <div class="grid">
+        <% coursesArr.forEach(course =>{ %>
+            <div class="grid-item">
+                <h3><%= course.courseName %></h3>
+                <p><%= course.title %></p>
+                <a href="/purchased/drop/<%= course.id %>">I Don't Want This Anymore</a>
+            </div>
+        <% }) %>
+    </div>
+</section>
